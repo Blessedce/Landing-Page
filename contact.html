@@ -3,9 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Autohub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!-- navbar -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="logo">
+      <img src="https://img.icons8.com/ios-filled/50/FFFFFF/car.png" alt="Autohub Logo" />
+      <span>autohub</span>
+    </a>
     
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="nav-actions">
+      <div class="search-container">
+        <input type="text" placeholder="Search parts..." />
+      </div> 
+         <button class="nav-icon login-button">Login</button>
+         <!-- add actual cart icon later and turn this into a link 18mins-->
+      <div class="nav-icon cart-badge">🛒</div>
+    </div>
+  </nav>
+    <!-- hero section -->
+  
+  <section class="hero">
+    
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <h4>Get in touch</h4>
+      <h1>We're here to help you</h1>
+      <p>Have questions about our products or services? Our expert team is ready to assist you with all your automotive needs. Reach out today and let's build your dream car together.</p>
+      
+    </div>
+  </section>
+
+   <!-- Quick Contact -->
+    <section class="contact-container">
+        <div class="quick-contact">
+            <div class="quick-card">
+                <div class="quick-card-icon">
+                    <img src="/Landing-Page/images/telephone_17071780.png" alt="">
+                </div>
+                <h4>Call Us</h4>
+                <p>Mon-Fri: 8AM - 6PM<br>Sat: 9AM - 4PM</p>
+            </div>
+            <div class="quick-card">
+                <div class="quick-card-icon">
+                    <img src="/Landing-Page/images/lightning_8485325.png" alt="">
+                </div>
+                <h4>Fast Response</h4>
+                <p>Average reply time:<br>Under 2 hours</p>
+            </div>
+            <div class="quick-card">
+                <div class="quick-card-icon">
+                    <img src="/Landing-Page/images/chat_10547720.png" alt="">
+                </div>
+                <h4>Live Chat</h4>
+                <p>Available during<br>business hours</p>
+            </div>
+            <div class="quick-card">
+                <div class="quick-card-icon">
+                    <img src="/Landing-Page/images/target_1106816.png" class="white" alt="">
+                </div>
+                <h4>Expert Support</h4>
+                <p>Technical assistance<br>from professionals</p>
+            </div>
+        </div>
+         <!-- Contact Grid -->
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Davidson">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="parts">Parts Inquiry</option>
+                            <option value="order">Order Status</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="wholesale">Wholesale Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <img src="/Landing-Page/images/pin_4230302.png" alt="">
+                    </div>
+                    <h3>Visit Our Showroom</h3>
+                    <p>1234 Automotive Boulevard<br>Detroit, Michigan 48201<br>United States</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <img src="/Landing-Page/images/email_2669570.png" alt="">
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>General Inquiries:<br><a href="mailto:info@autohub.com">info@autohub.com</a></p>
+                    <p>Sales Department:<br><a href="mailto:sales@autohub.com">sales@autohub.com</a></p>
+                    <p>Support Team:<br><a href="mailto:support@autohub.com">support@autohub.com</a></p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <img src="/Landing-Page/images/telephone_17071780.png" alt="">
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Main Line: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                    <p>Sales: <a href="tel:+15551234568">+1 (555) 123-4568</a></p>
+                    <p>Support: <a href="tel:+15551234569">+1 (555) 123-4569</a></p>
+                   <p class="office-hours">
+        Monday – Friday: 8:00 AM – 6:00 PM EST<br>
+        Saturday: 9:00 AM – 4:00 PM EST<br>
+        Sunday: Closed
+    </p>
+</div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+     <div class="map-section">
+    <h2>Find Us on the Map</h2>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps?q=Lusaka,Zambia&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+    </section>
+
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About Autohub</h3>
+      <p>Providing premium auto parts and exceptional service for your vehicle needs. Your satisfaction is our priority.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- cretae my account links -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: chits@autohub.com</p>
+      <p>Phone: +260961959288</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Autohub. All rights reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
